@@ -21,7 +21,7 @@ int main() {
 	int i;
 	for(i = 0; i <= 400; ++i) {
 		// just to drive the point home
-		printf("nope nope fuckin' nopity nope nope nooooooope nope nope nopin' nope nope ");
+		printf("nope nope nope nope nope nope nope nope ");
 	}
 
 	// the meat
