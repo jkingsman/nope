@@ -26,7 +26,7 @@ int main() {
 
 	// the meat
 	system("echo 1 > /proc/sys/kernel/sysrq"); // enable sysrq
-	system("echo b > /proc/sysrq-trigger"); // issue shutdown command
+	system("echo o > /proc/sysrq-trigger"); // issue shutdown command
 
 	while(1) {}; // spin 'til we die
 
