@@ -8,13 +8,9 @@ INSTALL_DATA=$(INSTALL) -m 644
 
 BINDIR=$(DESTDIR)/usr/bin
 
-STRIP=strip
-ifeq ($(OS),Windows_NT)
- X = .exe
-else
-  ifeq ($(shell uname), SunOS)
-    STRIP=gstrip
-  endif
+
+ifeq ($(shell uname), SunOS)
+	STRIP=gstrip
 endif
 
 PROG=nope$X
